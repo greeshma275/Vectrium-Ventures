@@ -43,7 +43,6 @@ const Navbar = ({setActiveSection }) => {
   );
 };
 Navbar.propTypes = {
-  activeSection: PropTypes.string.isRequired,
   setActiveSection: PropTypes.func.isRequired
 };
 
