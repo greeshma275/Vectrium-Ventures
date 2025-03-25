@@ -3,7 +3,6 @@
 
 A modern frontend platform showcasing Vectrium Ventures' IT solutions and services, built with Next.js and Tailwind CSS.
 
-![Vectrium Ventures Preview](public/screenshots/preview.png)
 
 ## Features
 
