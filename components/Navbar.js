@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import PropTypes from 'prop-types';
 import Link from 'next/link';
 import styles from "../styles/Navbar.module.css";
 
-const Navbar = ({ setActiveSection }) => {
+const Navbar = ({ activeSection,setActiveSection }) => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logoContainer}>
@@ -40,6 +41,10 @@ const Navbar = ({ setActiveSection }) => {
       
     </nav>
   );
+};
+Navbar.propTypes = {
+  activeSection: PropTypes.string.isRequired,
+  setActiveSection: PropTypes.func.isRequired
 };
 
 export default Navbar;

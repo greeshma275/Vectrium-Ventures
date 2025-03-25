@@ -1,12 +1,17 @@
-import Navbar from "../components/Navbar";
+// pages/page.tsx
+import { useState } from 'react';
+import Navbar from '../components/Navbar';
 
 export default function Home() {
+  const [activeSection, setActiveSection] = useState('home');
+
   return (
-    <>
-      <Navbar />
-      <main>
-        {/* Other content */}
-      </main>
-    </>
+    <div>
+      <Navbar 
+        activeSection={activeSection}
+        setActiveSection={setActiveSection}
+      />
+      {/* Rest of your page content */}
+    </div>
   );
 }
