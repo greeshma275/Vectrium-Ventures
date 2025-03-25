@@ -1,0 +1,101 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0%; /* Reduced padding */
+  background-color: white;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+  height: 50px; /* Optional: Set a fixed height */
+  position:fixed; position: fixed;
+  width: 100%;
+  z-index: 1000; /* Add this to ensure navbar stays on top */
+  top: 0;
+  left:0;
+  right:0;
+}
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .brandName {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 800; /* Bold */
+    color: #0D47A1;/* Dark Blue */
+    margin-left: 10px; /* Add left margin */
+  }
+  
+  .navLinks {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Adjusted for better spacing */
+    align-items: center;
+  }
+  
+  .navLinks li {
+    display: inline-block;
+  }
+  
+  .navLinks li a {
+    text-decoration: none;
+    color: #0D47A1; /* Dark Blue */
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+  }
+  .navLinks li a:hover{
+    background-color: #1E88E5;
+    color: white;
+  }
+  
+  .callButton {
+    border: 2px solid #0D47A1;
+    background: transparent;
+    color: #0D47A1;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    margin-left: 20px; /* Fine-tuned spacing */
+  }
+  
+  .callButton:hover {
+    background-color: #1E88E5;
+    color:white;
+  }
+  /* Add these new rules */
+.navButton {
+  /* Match .navLinks li a styles */
+  text-decoration: none;
+  color: #0D47A1;
+  padding: 8px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap;
+  border: none; /* Remove default button border */
+  background: none; /* Remove default button background */
+  margin: 0 5px; /* Add spacing between buttons */
+}
+
+.navButton:hover {
+  background-color: #1E88E5;
+  color: white;
+}
+
+/* Optional: Active state styling */
+.navButton.active {
+  background-color: #0D47A1;
+  color: white;
+}

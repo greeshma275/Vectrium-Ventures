@@ -1,0 +1,79 @@
+/* CareersSection.module.css */
+.careersSection {
+  padding: 4rem 0;
+  background: #f8fafc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.title {
+  font-size: 2.8rem;
+  color: #1a365d;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* Categories Section */
+.categories {
+  margin: 2rem 0;
+}
+
+.subtitle {
+  font-size: 3rem;
+  color: #24262a;
+  margin-bottom: 2.5rem;
+  position: relative;
+  padding-left: 2.5rem;
+}
+
+
+
+.categoryList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.category {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-left: 4px solid #0D47A1;
+}
+
+.category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  border-left-width: 6px;
+}
+
+.category h3 {
+  font-size: 1.4rem;
+  color: #1a365d;
+  margin-bottom: 1rem;
+}
+
+.category p {
+  font-size: 1rem;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .categoryList {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  
+  .category {
+    padding: 1.5rem;
+  }
+}

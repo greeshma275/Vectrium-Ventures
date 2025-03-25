@@ -1,0 +1,103 @@
+.missionSection {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+    padding: 6rem 0;
+    background: #ffffff;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #1a365d;
+    margin-bottom: 2rem;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a5568;
+    margin-bottom: 3rem;
+  }
+  
+  .statsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .statItem {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease-out;
+  }
+  
+  .animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .statNumber {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0D47A1;
+    margin-bottom: 0.5rem;
+  }
+  
+  .statLabel {
+    font-size: 0.95rem;
+    color: #4a5568;
+    display: block;
+    line-height: 1.4;
+  }
+  
+  .imageWrapper {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    
+    .statsContainer {
+      grid-template-columns: 1fr;
+    }
+    
+    .title {
+      font-size: 2rem;
+    }
+    
+    .imageWrapper {
+      order: -1;
+    }
+  }

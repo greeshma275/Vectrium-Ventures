@@ -1,0 +1,45 @@
+import React from "react";
+import Image from "next/image";
+import Link from 'next/link';
+import styles from "../styles/Navbar.module.css";
+
+const Navbar = ({ setActiveSection }) => {
+  return (
+    <nav className={styles.navbar}>
+      <div className={styles.logoContainer}>
+        <Image src="/logo.png" alt="Vectrium Ventures" width={150} height={50} />
+        <span className={styles.brandName}>Vectrium Ventures</span>
+      </div>
+      <ul className={styles.navLinks}>
+      <button 
+  className={styles.navButton} 
+  onClick={() => setActiveSection('home')}
+>
+  Home
+</button>
+
+<button 
+  className={styles.navButton} 
+  onClick={() => setActiveSection('services')}
+>
+  Services
+</button>
+<button 
+  className={styles.navButton} 
+  onClick={() => setActiveSection('aboutus')}
+> About Us</button>
+<button 
+  className={styles.navButton}
+  onClick={() => setActiveSection('career')}
+>
+  Careers
+</button>
+<li><Link href="/contacts">Contact Us</Link></li>
+        <li><button className={styles.callButton}onClick={() => window.location.href = 'https://api.whatsapp.com/send?phone=918815631154'}>Call Now</button></li>
+      </ul>
+      
+    </nav>
+  );
+};
+
+export default Navbar;

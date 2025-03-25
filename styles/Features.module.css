@@ -1,0 +1,170 @@
+.featuresSection {
+    display: flex;
+    gap: 4rem;
+    padding: 4rem 2rem;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  
+  .contentColumn {
+    flex: 1;
+  }
+  
+
+.imageColumn {
+    flex: 1;
+    display: flex;
+    align-items: flex-start; /* Changed from center */
+    padding-top: 60px; /* Added space at the top */
+    height: 500px; 
+    max-width: 500px/* Original 500px + 60px padding */
+  }
+  
+  .featureImage {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Additional downward push */
+  }
+  
+  .sectionTitle {
+    font-size: 2.5rem;
+    color: #131313;
+    margin-bottom: 2rem;
+  }
+  
+  .accordion {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .accordionItem {
+    margin-bottom: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+  }
+  
+  .accordionButton {
+    width: 100%;
+    padding: 1.5rem;
+    text-align: left;
+    background: #ffffff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2d3748;
+    transition: all 0.3s ease;
+  }
+  
+  .accordionButton:hover {
+    background: #f7fafc;
+  }
+  
+  .accordionButton.active {
+    background: #2563eb;
+    color: white;
+  }
+  
+  .chevron {
+    width: 12px;
+    height: 12px;
+    border-left: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .accordionButton.active .chevron {
+    transform: rotate(135deg);
+  }
+  
+  .accordionContent {
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    color: #4a5568;
+    line-height: 1.6;
+    background: #f8f9fa;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .featuresSection {
+      flex-direction: column;
+      padding: 2rem 1rem;
+    }
+    .imageColumn {
+        padding-top: 30px;
+        height: 300px; 
+      }
+    
+    .sectionTitle {
+      font-size: 2rem;
+    }
+    
+    .accordionButton {
+      padding: 1rem;
+      font-size: 1rem;
+    }
+    
+    .featureImage {
+      height: 300px;
+      margin-top: 10px;
+    }
+  }
+  .chevron {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-left: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .active .chevron {
+    transform: rotate(135deg);
+  }
+
+
+.logoTitleWrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .featureLogo {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .accordionButton {
+    gap: 1rem; 
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .featureLogo {
+      width: 24px;
+      height: 24px;
+    }
+    
+    .logoTitleWrapper {
+      gap: 0.75rem;
+    }
+  }

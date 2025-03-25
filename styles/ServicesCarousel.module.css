@@ -1,0 +1,155 @@
+/* Services Section Styles */
+.servicesSection {
+    padding: 4rem 2rem;
+    background: #f8f9fa;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    width: 100%;
+  }
+  
+  .sectionTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #131313;
+    margin-bottom: 3rem;
+  }
+  
+  /* Carousel Container */
+  .carouselWrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .carouselContainer {
+    flex: 1;
+    overflow: hidden;
+    touch-action: pan-y; /* Prevent browser swipe navigation */
+  }
+  
+  /* Carousel Track */
+  .carouselTrack {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0 -1rem; /* Counteract card margins */
+  }
+  
+  /* Service Card */
+  .serviceCard {
+    flex: 0 0 calc(100% - 2rem); /* Full width on mobile */
+    padding: 2rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin: 0 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Include padding in width */
+  }
+  
+  .serviceCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card Content */
+  .serviceLogo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin: 0 auto 1.5rem;
+  }
+  
+  .serviceTitle {
+    font-size: 1.5rem;
+    color: #090909;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .serviceContent {
+    color: #4a5568;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  /* Navigation Arrows */
+  .arrowButton {
+    background: #2563eb;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .arrowButton:hover:not(:disabled) {
+    background: #1e40af;
+    transform: scale(1.1);
+  }
+  
+  .arrowButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .serviceCard {
+      flex: 0 0 calc(50% - 2rem); /* 2 cards per view */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .serviceCard {
+      flex: 0 0 calc(33.33% - 2rem); /* 3 cards per view */
+    }
+  
+    .carouselTrack {
+      margin: 0 -0.5rem; /* Adjust spacing for desktop */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .servicesSection {
+      padding: 3rem 1rem;
+    }
+    
+    .sectionTitle {
+      font-size: 2rem;
+    }
+    
+    .serviceCard {
+      padding: 1.5rem;
+    }
+    
+    .serviceLogo {
+      width: 60px;
+      height: 60px;
+    }
+    
+    .serviceTitle {
+      font-size: 1.3rem;
+    }
+    
+    .arrowButton {
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Mobile Landscape Prevention */
+  @media (max-width: 480px) and (orientation: landscape) {
+    .servicesSection {
+      padding: 2rem 1rem;
+    }
+  }
