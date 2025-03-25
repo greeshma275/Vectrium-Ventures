@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 import styles from "../styles/Navbar.module.css";
 
-const Navbar = ({ activeSection,setActiveSection }) => {
+const Navbar = ({setActiveSection }) => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logoContainer}>
