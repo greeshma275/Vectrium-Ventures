@@ -1,6 +1,5 @@
 // components/CallToAction.js
 import React from 'react';
-import Link from 'next/link';
 import styles from '../styles/Call.module.css';
 
 const CallToAction = () => {

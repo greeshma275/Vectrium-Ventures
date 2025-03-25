@@ -44,7 +44,7 @@ const CandidatesSection = () => {
                     <h3 className={styles.cardTitle}>Profile</h3>
                   </div>
                   <p className={styles.cardText}>
-                    Detailed information about the candidate’s background.
+                    Detailed information about the candidate&apos;s background.
                   </p>
                 </div>
 
@@ -54,7 +54,7 @@ const CandidatesSection = () => {
                     <h3 className={styles.cardTitle}>Skills</h3>
                   </div>
                   <p className={styles.cardText}>
-                    Showcasing the candidate’s key competencies and talents.
+                    Showcasing the candidate&apos;s key competencies and talents.
                   </p>
                 </div>
               </div>

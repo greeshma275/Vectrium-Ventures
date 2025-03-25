@@ -1,5 +1,4 @@
-// components/Footer.js
-import Link from 'next/link';
+
 import styles from '../styles/Footer.module.css';
 
 const Footer = () => {

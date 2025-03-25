@@ -27,7 +27,7 @@ const HeroSection = ({ activeSection }) => {
       ) : activeSection === 'aboutus' ? (
         // About Us Content
         <div className={styles.aboutUsContent}>
-          <h2>We're changing the<br />whole game.</h2>
+          <h2>We&apos;re changing the<br />whole game.</h2>
           <a href="https://api.whatsapp.com/send?phone=918815631154"className={styles.callButton}>Call Now</a>
         </div>
       ) : activeSection === 'career' ? (
@@ -39,8 +39,8 @@ const HeroSection = ({ activeSection }) => {
           </h1>
           <p className={styles.description}>
             Explore exciting career opportunities at Vectrium Ventures. We are always looking for 
-            talented individuals to join our team and help us grow. If you're passionate about 
-            technology, creativity, and innovation, we'd love to hear from you.
+            talented individuals to join our team and help us grow. If you&apos;re passionate about 
+            technology, creativity, and innovation, we&apos;d love to hear from you.
           </p>
           
           <div className={styles.careerCategories}>
