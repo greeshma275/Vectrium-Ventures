@@ -1,7 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import styles from '../styles/SolutionsSection.module.css';
-'use client';
+
 export default function SolutionsSection() {
   useEffect(() => {
     const observer = new IntersectionObserver(

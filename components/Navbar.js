@@ -35,7 +35,13 @@ const Navbar = ({setActiveSection }) => {
 >
   Careers
 </button>
-<li><Link href="/contacts">Contact Us</Link></li>
+<button 
+  className={styles.navButton}
+  onClick={() => setActiveSection('contactus')}
+>
+  Contact Us
+</button>
+
         <li><button className={styles.callButton}onClick={() => window.location.href = 'https://api.whatsapp.com/send?phone=918815631154'}>Call Now</button></li>
       </ul>
       

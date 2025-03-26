@@ -1,3 +1,4 @@
+'use client';
 import { useEffect, useState, lazy, Suspense } from 'react';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
@@ -12,7 +13,7 @@ import VisionSection from '../components/VisionSection';
 import CareersSection from '../components/CareersSection';
 import CandidatesSection from '../components/CandidatesSection';
 import FormSection from '../components/FormSection';
-import { useEffect } from 'react';
+import Contact from '../components/Contact';
 const TrustedBy = lazy(() => import('../components/TrustedBy'));
 const SolutionsSection = lazy(() => import('../components/SolutionsSection'));
 const CallToAction = lazy(() => import('../components/CallToAction'));
@@ -56,10 +57,15 @@ export default function Home() {
           <FormSection/>
           <Footer />
         </>
+      ) :activeSection==='contactus'?(
+        <>
+        <Contact/>
+        </>
       ) : (
         <>
           <HeroSection activeSection={activeSection} />
           <Suspense fallback={<div>Loading...</div>}>
+          
             <TrustedBy />
             <SolutionsSection />
             <CallToAction />
