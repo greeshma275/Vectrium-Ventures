@@ -12,7 +12,7 @@ import VisionSection from '../components/VisionSection';
 import CareersSection from '../components/CareersSection';
 import CandidatesSection from '../components/CandidatesSection';
 import FormSection from '../components/FormSection';
-
+import { useEffect } from 'react';
 const TrustedBy = lazy(() => import('../components/TrustedBy'));
 const SolutionsSection = lazy(() => import('../components/SolutionsSection'));
 const CallToAction = lazy(() => import('../components/CallToAction'));
