@@ -1,4 +1,4 @@
-'use client';
+
 import { useEffect } from 'react';
 import styles from '../styles/TrustedBy.module.css';
 'use client';
