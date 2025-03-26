@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import PropTypes from 'prop-types';
-import Link from 'next/link';
 import styles from "../styles/Navbar.module.css";
 
 const Navbar = ({setActiveSection }) => {
