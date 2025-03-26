@@ -1,16 +1,16 @@
-// pages/page.tsx
-import { useState } from 'react';
-import Navbar from '../components/Navbar';
+// app/page.tsx
+'use client'
 
-export default function Home() {
-  const [setActiveSection] = useState('home');
+import { useState } from 'react'
+
+export default function HomePage() {
+  const [count, setCount] = useState(0)
 
   return (
-    <div>
-      <Navbar 
-        setActiveSection={setActiveSection}
-      />
-      {/* Rest of your page content */}
-    </div>
-  );
+    <main>
+      <button onClick={() => setCount(count + 1)}>
+        Count: {count}
+      </button>
+    </main>
+  )
 }
