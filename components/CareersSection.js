@@ -2,7 +2,7 @@
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import styles from '../styles/CareersSection.module.css';
-
+'use client';
 const CareersSection = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,

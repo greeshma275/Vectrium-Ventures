@@ -1,6 +1,7 @@
+'use client';
 import { useEffect } from 'react';
 import styles from '../styles/TrustedBy.module.css';
-
+'use client';
 export default function TrustedBy() {
   useEffect(() => {
     const observer = new IntersectionObserver(

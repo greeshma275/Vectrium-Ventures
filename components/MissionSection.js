@@ -2,7 +2,7 @@ import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
 import Image from 'next/image';
 import styles from '../styles/MissionSection.module.css';
-
+'use client';
 const MissionSection = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,

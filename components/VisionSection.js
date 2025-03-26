@@ -1,7 +1,7 @@
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import styles from '../styles/VisionSection.module.css';
-
+'use client';
 const VisionSection = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,

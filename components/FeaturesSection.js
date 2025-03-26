@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import styles from '../styles/Features.module.css';
-
+'use client';
 const FeaturesSection = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const features = [

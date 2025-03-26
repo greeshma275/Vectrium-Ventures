@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import styles from '../styles/FormSection.module.css';
-
+'use client';
 const FormSection = () => {
   const [formData, setFormData] = useState({
     name: '',
