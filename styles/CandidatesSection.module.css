@@ -44,7 +44,7 @@
   
   .title {
     font-size: 2.4rem; /* Reduced from 2.8rem */
-    color: #1a365d;
+    color: #111111;
     margin-bottom: 1.5rem; /* Reduced from 2rem */
     line-height: 1.3;
   }
@@ -98,13 +98,13 @@
   
   .cardTitle {
     font-size: 1.3rem; /* Reduced from 1.5rem */
-    color: #1a365d;
+    color: #0a0a0a;
     margin: 0;
   }
   
   .cardText {
     font-size: 1rem; /* Reduced from 1.1rem */
-    color: #4a5568;
+    color: #3c3c3d;
     line-height: 1.5;
     margin: 0;
   }

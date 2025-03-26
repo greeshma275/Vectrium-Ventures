@@ -70,14 +70,14 @@
   }
   
   .serviceContent {
-    color: #4a5568;
+    color: #050505;
     line-height: 1.6;
     font-size: 1rem;
   }
   
   /* Navigation Arrows */
   .arrowButton {
-    background: #2563eb;
+    background: #2b2c2c;
     color: white;
     border: none;
     width: 50px;
@@ -92,7 +92,7 @@
   }
   
   .arrowButton:hover:not(:disabled) {
-    background: #1e40af;
+    background: #616161;
     transform: scale(1.1);
   }
   

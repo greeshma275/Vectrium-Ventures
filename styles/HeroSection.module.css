@@ -18,17 +18,17 @@
   padding: 4rem 2rem; /* Increased padding */
   max-width: 1400px; /* Larger max-width */
   margin: 0 auto;
-  font-size: 1.2rem; /* Base font size increase */
+  font-size: 1rem; /* Base font size increase */
 }
 
 .aboutUsContent h2 {
-  font-size: 2.8rem; /* Larger heading */
+  font-size: 2rem; /* Larger heading */
   line-height: 1.3;
   margin-bottom: 2rem;
 }
 
 .callButton {
-  background: #4787e7;
+  background: #000000;
   color: white;
   padding: 12px 24px; /* Larger padding */
   font-size: 20px; /* Bigger text */
@@ -42,7 +42,7 @@
 }
 
 .callButton:hover {
-  background-color: #1E88E5;
+  background-color: #212122;
   transform: scale(1.05); /* Subtle hover effect */
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
@@ -52,37 +52,37 @@
   margin: 0 auto;
   width: 100%;
   padding: 4rem 2rem; /* Added padding */
-  font-size: 1.25rem; /* Larger base font */
+  font-size: 1rem; /* Larger base font */
 }
 
 .content h1.title {
-  font-size: 3.5rem; /* Larger main title */
+  font-size: 3rem; /* Larger main title */
   line-height: 1.2;
   margin-bottom: 2rem;
 }
 
 .content h2.subtitle {
-  font-size: 2.5rem; /* Bigger subtitle */
+  font-size: 2rem; /* Bigger subtitle */
   margin-bottom: 1.5rem;
 }
 .subtitle{
-  color: #1565c0;
+  color: #050505;
 }
 
 /* Common styles for both versions */
 .title {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 500;
   margin-bottom: 1.5rem;
   line-height: 1.2;
 }
 
 .title span {
-  color: #2563eb;
+  color: #1f1f1f;
 }
 
 .description {
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
   line-height: 1.6;
   max-width: 600px;
@@ -96,7 +96,7 @@
 }
 
 .ctaButton {
-  background-color: #1e88e5;
+  background-color: #040404;
   padding: 1rem 2rem;
   border-radius: 5px;
   color: white;
@@ -108,7 +108,7 @@
 }
 
 .ctaButton:hover {
-  background-color: #1565c0;
+  background-color: #292a2a;
 }
 
 /* Services-specific adjustments */
@@ -164,14 +164,14 @@
 /* In your CSS Module */
 .navButton {
   padding: 0.8rem 1.5rem;
-  background: #5794ef;
+  background: #0d0d0d;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .navButton:hover {
-  background: rgb(137, 190, 251);
+  background: rgb(251, 251, 252);
 }
 
 .careerCategories {
@@ -198,8 +198,8 @@
   border-radius: 6px;
   font-weight: 500;
   transition: all 0.3s ease;
-  color: #1a365d;
-  border: 1px solid #b3d1ff;
+  color: #0b0b0b;
+  border: 1px solid #f9f9fa;
   white-space: nowrap; /* Prevents text wrapping */
 }
 
@@ -207,7 +207,7 @@
   background-color: #cce4ff;
   transform: translateY(-2px); /* Changed to vertical hover effect */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  border-color: #8ab8ff;
+  border-color: #9f9f9f;
 }
 
 /* Optional: Add responsive adjustments */

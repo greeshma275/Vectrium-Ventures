@@ -12,7 +12,7 @@
 
 .title {
   font-size: 2.8rem;
-  color: #1a365d;
+  color: #101010;
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -45,7 +45,7 @@
   padding: 2rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  border-left: 4px solid #0D47A1;
+  border-left: 4px solid #505050;
 }
 
 .category:hover {
@@ -56,13 +56,13 @@
 
 .category h3 {
   font-size: 1.4rem;
-  color: #1a365d;
+  color: #121213;
   margin-bottom: 1rem;
 }
 
 .category p {
   font-size: 1rem;
-  color: #4a5568;
+  color: #3e3f3f;
   line-height: 1.6;
 }
 

@@ -71,7 +71,7 @@
   }
   
   .accordionButton.active {
-    background: #2563eb;
+    background: #262627;
     color: white;
   }
   
@@ -91,7 +91,7 @@
   .accordionContent {
     overflow: hidden;
     transition: max-height 0.3s ease-out, padding 0.3s ease-out;
-    color: #4a5568;
+    color: #ababac;
     line-height: 1.6;
     background: #f8f9fa;
     border-radius: 0 0 8px 8px;

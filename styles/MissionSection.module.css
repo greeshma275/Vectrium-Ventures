@@ -26,14 +26,14 @@
   
   .title {
     font-size: 2.5rem;
-    color: #1a365d;
+    color: #1f1f20;
     margin-bottom: 2rem;
   }
   
   .description {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #4a5568;
+    color: #62666c;
     margin-bottom: 3rem;
   }
   
@@ -57,13 +57,13 @@
   .statNumber {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #0D47A1;
+    color: #0e0e0e;
     margin-bottom: 0.5rem;
   }
   
   .statLabel {
     font-size: 0.95rem;
-    color: #4a5568;
+    color: #63666a;
     display: block;
     line-height: 1.4;
   }

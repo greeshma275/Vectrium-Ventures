@@ -9,7 +9,7 @@
   .statsSection {
     background-color: #eff0f1;
     padding: 4rem 0;
-    color: #041e72;
+    color: #060606;
   }
   
   .statsGrid {
@@ -30,7 +30,7 @@
     margin-bottom: 0.5rem;
     line-height: 1;
     display: block;
-    background: linear-gradient(45deg, #041e72, #0D47A1);
+    background: linear-gradient(45deg, #373737, #737474);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -38,7 +38,7 @@
   
   .statLabel {
     font-size: 1.2rem;
-    color: #444;
+    color: #292828;
     font-weight: 500;
   }
   
@@ -51,7 +51,7 @@
   
   .testimonialsHeading {
     font-size: 2.5rem;
-    color: #0D47A1;
+    color: #1e1e1e;
     margin-bottom: 1rem;
     position: relative;
     padding-bottom: 0.5rem;
@@ -65,7 +65,7 @@
     transform: translateX(-50%);
     width: 100px;
     height: 3px;
-    background-color: #0D47A1;
+    background-color: #969697;
   }
   
   .testimonialsSubhead {
@@ -83,7 +83,7 @@
   }
   
   .testimonialCard {
-    background: rgb(209, 220, 244);
+    background: rgb(217, 217, 217);
     border-radius: 15px;
     padding: 2rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -105,13 +105,13 @@
   }
   
   .stars {
-    color: #f23d0b;
+    color: #101010;
     font-size: 1.4rem;
     letter-spacing: 2px;
   }
   
   .contactButton {
-    background: #0D47A1;
+    background: #505050;
     border: none;
     width: 40px;
     height: 40px;
@@ -124,19 +124,19 @@
   }
   
   .contactButton:hover {
-    background: #1E88E5;
+    background: #858686;
     transform: scale(1.1);
   }
   
   .testimonialTitle {
     font-size: 1.5rem;
-    color: #0D47A1;
+    color: #333334;
     margin-bottom: 1rem;
     font-weight: 700;
   }
   
   .testimonialText {
-    color: #666;
+    color: #3c3c3c;
     line-height: 1.7;
     flex-grow: 1;
     margin-bottom: 1.5rem;
@@ -156,7 +156,7 @@
   
   .authorName {
     font-weight: 600;
-    color: #0D47A1;
+    color: #424344;
     margin-bottom: 0.25rem;
   }
   

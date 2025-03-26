@@ -46,7 +46,7 @@
   .helpLink {
     display: inline-block;
     margin-top: 1.5rem;
-    color: #0D47A1;
+    color: #040404;
     font-weight: 600;
     text-decoration: none;
     border-bottom: 2px solid transparent;
@@ -54,7 +54,7 @@
   }
   
   .helpLink:hover {
-    color: #1E88E5;
+    color: #4e4e4f;
     border-bottom-color: currentColor;
   }
   
@@ -99,11 +99,11 @@
   .leadText{
     font-size: 20px;
     font-weight: 500px;
-    color: #1E88E5;
+    color: #4f5151;
     margin-top: 100px;
   }
   .head{
     font-size: 30px;
     font-weight: 400px;
-    color:rgb(22, 123, 247);
+    color:rgb(76, 75, 75);
   }

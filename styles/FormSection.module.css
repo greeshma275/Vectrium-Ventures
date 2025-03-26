@@ -67,7 +67,7 @@
   
   .input:focus {
     outline: none;
-    border-color: #0D47A1;
+    border-color: #525252;
     box-shadow: 0 0 0 2px rgba(13, 71, 161, 0.1);
     background: #fff;
   }
@@ -103,8 +103,8 @@
   .submitButton {
     width: 100%;
     padding: 1.1rem;
-    background: #0D47A1;
-    color: white;
+    background: #4f4f4f;
+    color: rgb(15, 15, 15);
     border: none;
     border-radius: 8px;
     font-size: 1rem;
@@ -116,7 +116,7 @@
   }
   
   .submitButton:hover {
-    background: #1E88E5;
+    background: #7c7c7c;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(13, 71, 161, 0.2);
   }
