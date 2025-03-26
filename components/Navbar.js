@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import PropTypes from 'prop-types';
 import styles from "../styles/Navbar.module.css";
-
+import ThemeToggle from './ThemeToggle';
 const Navbar = ({setActiveSection }) => {
   return (
     <nav className={styles.navbar}>
@@ -43,7 +43,7 @@ const Navbar = ({setActiveSection }) => {
 
         <li><button className={styles.callButton}onClick={() => window.location.href = 'https://api.whatsapp.com/send?phone=918815631154'}>Call Now</button></li>
       </ul>
-      
+      <ThemeToggle />
     </nav>
   );
 };

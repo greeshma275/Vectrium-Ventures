@@ -14,6 +14,7 @@ import CareersSection from '../components/CareersSection';
 import CandidatesSection from '../components/CandidatesSection';
 import FormSection from '../components/FormSection';
 import Contact from '../components/Contact';
+import ThemeToggle from '../components/ThemeToggle';
 const TrustedBy = lazy(() => import('../components/TrustedBy'));
 const SolutionsSection = lazy(() => import('../components/SolutionsSection'));
 const CallToAction = lazy(() => import('../components/CallToAction'));
@@ -32,9 +33,10 @@ export default function Home() {
   return (
     <div>
       <Navbar setActiveSection={setActiveSection} />
-      
+      <ThemeToggle />
       {activeSection === 'services' ? (
         <>
+        
           <HeroSection activeSection={activeSection} />
           <ServicesSection />
           <StatsTestimonialsSection />
@@ -65,7 +67,6 @@ export default function Home() {
         <>
           <HeroSection activeSection={activeSection} />
           <Suspense fallback={<div>Loading...</div>}>
-          
             <TrustedBy />
             <SolutionsSection />
             <CallToAction />

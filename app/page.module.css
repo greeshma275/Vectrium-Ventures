@@ -1,3 +1,24 @@
+/* app/globals.css */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --accent-color: #007bff;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --accent-color: #4da3ff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
 .page {
     --gray-rgb: 0, 0, 0;
     --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
