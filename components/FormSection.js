@@ -1,7 +1,6 @@
 
 'use client';// components/FormSection.jsx
 import { useState } from 'react';
-import Image from 'next/image';
 import styles from '../styles/FormSection.module.css';
 
 const FormSection = () => {

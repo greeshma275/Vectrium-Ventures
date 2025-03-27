@@ -2,7 +2,6 @@
 'use client';
 import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
-import Image from 'next/image';
 import styles from '../styles/MissionSection.module.css';
 
 const MissionSection = () => {
