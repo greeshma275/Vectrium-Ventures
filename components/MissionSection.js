@@ -56,17 +56,6 @@ const MissionSection = () => {
               ))}
             </div>
           </div>
-
-          {/* Right Image */}
-          <div className={styles.imageWrapper}>
-            <Image
-              src="/services/Our_mission-min.png" // Replace with your image path
-              alt="Our Mission"
-              width={600}
-              height={600}
-              className={styles.image}
-            />
-          </div>
         </div>
       </div>
     </section>

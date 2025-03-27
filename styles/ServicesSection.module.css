@@ -1,135 +1,173 @@
 /* ServicesSection.module.css */
-.servicesSection {
-    padding: 4rem 2rem;
-    background-color: #f9f9f9;
-  }
-  
-  .sectionHeader {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  
-  .sectionHeader h2 {
-    font-size: 2.5rem;
-    color: #2a2a2b;
-    margin-bottom: 1rem;
-  }
-  
-  .sectionHeader p {
-    color: #313131;
-    max-width: 800px;
-    margin: 0 auto 1rem;
-  }
-  
-  .servicesGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .serviceCard {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .serviceCard:hover {
-    transform: translateY(-5px);
-  }
-  
-  .serviceCard h3 {
-    color: #2b2b2c;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-  }
-  
-  .serviceCard p {
-    color: #949393;
-    line-height: 1.6;
-  }
-  /* ServicesSection.module.css */
-.serviceCard {
-    /* ... existing styles ... */
-    text-align: center;
-  }
-  
-  .serviceImage {
-    width: 80px; /* Adjust as needed */
-    height: 80px; /* Maintain aspect ratio */
-    margin-bottom: 1rem;
-    object-fit: contain; /* Ensure logos remain visible */
-  }
-  /* ServicesSection.module.css */
-/* ... existing styles ... */
+/* Unified Card Styles */
+.serviceCard,
+.testimonialCard,
+.statCard {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 2.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+}
 
+.serviceCard:hover,
+.testimonialCard:hover,
+.statCard:hover {
+  border-color: #495057;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Services Section */
+.servicesSection {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  background-color: var(--section-background);
+  color: var(--text-color);
+}
+
+.serviceCard {
+  text-align: center;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.serviceImage {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  object-fit: contain;
+}
+
+/* Stats Section */
 .statsSection {
-    padding: 4rem 2rem;
-    background-color: #505050;
-    color: rgb(35, 35, 35);
-    margin-top: 4rem;
-  }
-  
-  .statsGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .statItem h3 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.statCard {
+  background: #ffffff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.statItem h3 {
+  font-size: 2.5rem;
+  color: #2b2b2c;
+  margin-bottom: 0.5rem;
+}
+
+.statItem p {
+  color: #666666;
+  font-size: 1.1rem;
+}
+
+/* Testimonials Section */
+.testimonialsSection {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.testimonialCard {
+  text-align: left;
+  position: relative;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.authorContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.rating {
+  background-color: #f8f9fa;
+  color: #2b2b2c;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 1px solid #dee2e6;
+}
+
+/* Common Styles */
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionHeader h2 {
+  font-size: 2.5rem;
+  color: #131313;
+  margin-bottom: 1rem;
+}
+
+.sectionHeader p {
+  color: #424242;
+  max-width: 800px;
+  margin: 0 auto 1rem;
+}
+
+.servicesGrid,
+.testimonialsGrid,
+.statsGrid {
+  display: grid;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid Configurations */
+.servicesGrid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.testimonialsGrid {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.statsGrid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* Typography */
+.serviceCard h3,
+.testimonialCard h4 {
+  color: #131313;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.serviceCard p,
+.testimonialCard p {
+  color: #666666;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .servicesSection,
+  .statsSection,
   .testimonialsSection {
-    padding: 4rem 2rem;
-    background-color: #f9f9f9;
-    text-align: center;
+    padding: 3rem 1rem;
   }
-  
-  .testimonialsSubhead {
-    color: #201f1f;
-    margin-bottom: 3rem;
+
+  .sectionHeader h2 {
+    font-size: 2rem;
   }
-  
-  .testimonialsGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .testimonialCard {
-    background: white;
+
+  .serviceCard,
+  .testimonialCard,
+  .statCard {
     padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    min-height: auto;
   }
-  
-  .testimonialCard h4 {
-    color: #282929;
-    margin-bottom: 1rem;
-  }
-  
-  .authorContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1.5rem;
-  }
-  
-  .rating {
-    background-color: #888888;
-    color: rgb(18, 17, 17);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-weight: bold;
-  }
+}

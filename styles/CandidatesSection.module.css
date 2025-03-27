@@ -1,135 +1,151 @@
 /* CandidatesSection.module.css */
 .section {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease-out;
-    padding: 6rem 0; /* Reduced from 8rem */
-    background: #fff;
-  }
-  
-  .visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem; /* Reduced from 4rem */
-    align-items: start;
-  }
-  
-  .imageWrapper {
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    margin-top: 3rem; /* Added to push image down */
-  }
-  
-  .image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .content {
-    padding-left: 2rem;
+  opacity: 0;
+  transform: translateY(30px);
+  background-color: var(--section-background);
+  color: var(--text-color);
+  transition: all 0.6s ease-out;
+  padding: 6rem 0;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.imageWrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border: 1px solid #dee2e6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #131313;
+  margin-bottom: 2rem;
+}
+
+/* Unified Card Styles */
+.splitLayout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.card:hover {
+  border-color: #495057;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cardIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #e6f0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #2b2b2c;
+}
+
+.cardTitle {
+  font-size: 1.4rem;
+  color: #131313;
+  margin: 0;
+}
+
+.cardText {
+  font-size: 1rem;
+  color: #424242;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section {
+      padding: 4rem 0;
   }
   
   .title {
-    font-size: 2.4rem; /* Reduced from 2.8rem */
-    color: #111111;
-    margin-bottom: 1.5rem; /* Reduced from 2rem */
-    line-height: 1.3;
+      font-size: 2rem;
   }
   
-  /* Cards Layout Styles */
   .splitLayout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem; /* Reduced from 2rem */
-  }
-  
-  .column {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem; /* Reduced from 2rem */
+      grid-template-columns: 1fr;
   }
   
   .card {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 1.5rem; /* Reduced from 2rem */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    flex: 1;
-  }
-  
-  .card:hover {
-    transform: translateY(-3px); /* Reduced from 5px */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Reduced shadow */
-    border-left-width: 4px; /* Reduced from 6px */
-  }
-  
-  .cardHeader {
-    display: flex;
-    align-items: center;
-    gap: 1rem; /* Reduced from 1.5rem */
-    margin-bottom: 1rem; /* Reduced from 1.5rem */
+      padding: 1.5rem;
   }
   
   .cardIcon {
-    width: 40px; /* Reduced from 48px */
-    height: 40px;
-    border-radius: 10px; /* Reduced from 12px */
-    background: #e6f0ff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.3rem; /* Reduced from 1.5rem */
-    flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardHeader {
+      gap: 1rem;
   }
   
   .cardTitle {
-    font-size: 1.3rem; /* Reduced from 1.5rem */
-    color: #0a0a0a;
-    margin: 0;
+      font-size: 1.2rem;
   }
-  
-  .cardText {
-    font-size: 1rem; /* Reduced from 1.1rem */
-    color: #3c3c3d;
-    line-height: 1.5;
-    margin: 0;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .section {
-      padding: 4rem 0; /* Reduced from 6rem */
-    }
-    
-    .grid {
-      gap: 2rem; /* Reduced from 3rem */
-    }
-  
-    .title {
-      font-size: 2rem; /* Reduced from 2.2rem */
-    }
-  
-    .card {
-      padding: 1rem; /* Reduced from 1.5rem */
-    }
-  
-    .cardIcon {
-      width: 36px; /* Reduced from 40px */
-      height: 36px;
-      font-size: 1.1rem; /* Reduced from 1.3rem */
-    }
-  }
+}

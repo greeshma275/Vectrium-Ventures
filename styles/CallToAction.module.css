@@ -1,5 +1,7 @@
 .ctaSection {
     padding: 6rem 2rem;
+    background-color: var(--section-background);
+    color: var(--text-color);
     opacity: 0;
     transform: translateY(50px);
     transition: all 0.6s ease-out;

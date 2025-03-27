@@ -1,4 +1,3 @@
-// components/ThemeToggle.js
 'use client';
 import { useEffect, useState } from 'react';
 import styles from './ThemeToggle.module.css';

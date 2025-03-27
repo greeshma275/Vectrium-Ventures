@@ -1,92 +1,88 @@
 .visionSection {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease-out;
-    padding: 6rem 0;
-    background: #f8fafc;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+  padding: 6rem 0;
+  background: #ffffff;
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  padding-right: 10%;
+  background-color: var(--section-background);
+  color: var(--text-color);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Right-aligned Card Styles */
+.content {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 2.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  max-width: 600px; /* Control card width */
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.visible .content {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #131313;
+  margin-bottom: 2rem;
+  text-align: right;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #424242;
+  text-align: right;
+}
+
+/* Hover effect */
+.content:hover {
+  border-color: #495057;
+  transform: translate(-4px, -4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .visionSection {
+    justify-content: center; /* Center align for smaller screens */
+    padding-right: 0;
   }
-  
-  .visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-  }
-  
-  .imageWrapper {
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-    transform: translateX(-20px);
-    transition: transform 0.6s ease-out;
-  }
-  
-  .visible .imageWrapper {
-    transform: translateX(0);
-  }
-  
-  .image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 12px;
-  }
-  
+
   .content {
-    padding-left: 2rem;
+    max-width: 100%;
+    text-align: center;
   }
-  
-  .title {
-    font-size: 2.5rem;
-    color: #1e1e1f;
-    margin-bottom: 2rem;
-  }
-  
+
+  .title,
   .description {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #4a5568;
-    position: relative;
-    transform: translateX(20px);
-    opacity: 0;
-    transition: all 0.6s ease-out 0.2s;
+    text-align: center;
   }
-  
-  .visible .description {
-    opacity: 1;
-    transform: translateX(0);
+}
+
+@media (max-width: 480px) {
+  .visionSection {
+    padding: 4rem 0;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .grid {
-      grid-template-columns: 1fr;
-      gap: 3rem;
-    }
-    
-    .imageWrapper {
-      order: -1;
-      transform: translateX(-20px);
-    }
-    
-    .content {
-      padding-left: 0;
-      text-align: center;
-    }
-    
-    .description {
-      text-align: left;
-    }
+
+  .content {
+    padding: 1.5rem;
   }
+
+  .title {
+    font-size: 1.75rem;
+  }
+}

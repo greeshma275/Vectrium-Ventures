@@ -1,98 +1,59 @@
-/* SolutionsSection.module.css */
+/* Add to SolutionsSection.module.css */
+.heroCard {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  width: 90%;
+}
+
+.heroCard:hover {
+  border-color: #495057;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Existing solutions section styles */
 .solutionsSection {
-    padding: 4rem 2rem;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.6s ease-out;
-    background: #f8f9fa;
-  }
-  
-  .solutionsSection.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .contentWrapper {
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .imageContainer {
-    flex: 1;
-    overflow: hidden;
-    border-radius: 12px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    transform-origin: center;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .imageContainer:hover {
-    transform: scale(1.03);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    z-index: 2;
-  }
-  
-  .solutionsImage {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .imageContainer:hover .solutionsImage {
-    transform: scale(1.02);
-  }
-  
-  .textContent {
-    flex: 1;
-    padding: 2rem;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .imageContainer:hover + .textContent {
-    transform: translateX(20px);
-  }
-  
-  .sectionTitle {
-    font-size: 2.5rem;
-    color: #030303;
-    margin-bottom: 1.5rem;
-  }
-  
-  .description {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #111111;
-  }
-  
-  @media (max-width: 768px) {
-    .contentWrapper {
-      flex-direction: column;
-      gap: 2rem;
-    }
-    
-    .imageContainer {
-      width: 100%;
-      max-width: 500px;
-    }
-    
-    .imageContainer:hover {
-      transform: scale(1.02);
-    }
-    
-    .sectionTitle {
-      font-size: 2rem;
-    }
-    
-    .description {
-      font-size: 1rem;
-    }
-    
-    .imageContainer:hover + .textContent {
-      transform: none;
-    }
-  }
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem;
+  background-color: var(--section-background);
+  color: var(--text-color);
+}
+
+.contentWrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.textContent {
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #212121;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #424242;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Add animation if needed */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease-out;
+}

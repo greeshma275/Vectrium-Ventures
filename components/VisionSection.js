@@ -16,17 +16,6 @@ const VisionSection = () => {
     >
       <div className={styles.container}>
         <div className={styles.grid}>
-          {/* Left Image */}
-          <div className={styles.imageWrapper}>
-            <Image
-              src="/services/vision-min.jpg" // Replace with your image path
-              alt="Our Vision"
-              width={600}
-              height={400}
-              className={styles.image}
-            />
-          </div>
-
           {/* Right Content */}
           <div className={styles.content}>
             <h2 className={styles.title}>Our Vision</h2>

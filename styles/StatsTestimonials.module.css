@@ -10,6 +10,7 @@
     background-color: #eff0f1;
     padding: 4rem 0;
     color: #060606;
+    
   }
   
   .statsGrid {
@@ -47,6 +48,8 @@
     padding: 4rem 0;
     background-color: #f8f9fa;
     text-align: center;
+    background-color: var(--section-background);
+    color: var(--text-color);
   }
   
   .testimonialsHeading {

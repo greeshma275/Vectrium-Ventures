@@ -1,103 +1,124 @@
 .missionSection {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease-out;
-    padding: 6rem 0;
-    background: #ffffff;
-  }
-  
-  .visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
-  
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+  padding: 6rem 0;
+  background: #ffffff;
+  background-color: var(--section-background);
+  color: var(--text-color);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Unified Card Styles */
+.textContent,
+.statItem {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 2.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.textContent:hover,
+.statItem:hover {
+  border-color: #495057;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #131313;
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #424242;
+  margin-bottom: 2rem;
+}
+
+.statsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.statItem {
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease-out;
+}
+
+.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.statNumber {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2b2b2c;
+  margin-bottom: 0.5rem;
+}
+
+.statLabel {
+  font-size: 1rem;
+  color: #666666;
+  line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    color: #1f1f20;
-    margin-bottom: 2rem;
-  }
-  
-  .description {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #62666c;
-    margin-bottom: 3rem;
+      grid-template-columns: 1fr;
+      gap: 3rem;
   }
   
   .statsContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+      grid-template-columns: 1fr;
   }
   
+  .title {
+      font-size: 2rem;
+  }
+  
+  .textContent,
   .statItem {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.4s ease-out;
+      padding: 2rem;
   }
-  
-  .animate {
-    opacity: 1;
-    transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+  .missionSection {
+      padding: 4rem 0;
   }
   
   .statNumber {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #0e0e0e;
-    margin-bottom: 0.5rem;
+      font-size: 2rem;
   }
   
   .statLabel {
-    font-size: 0.95rem;
-    color: #63666a;
-    display: block;
-    line-height: 1.4;
+      font-size: 0.9rem;
   }
-  
-  .imageWrapper {
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 12px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .grid {
-      grid-template-columns: 1fr;
-      gap: 3rem;
-    }
-    
-    .statsContainer {
-      grid-template-columns: 1fr;
-    }
-    
-    .title {
-      font-size: 2rem;
-    }
-    
-    .imageWrapper {
-      order: -1;
-    }
-  }
+}

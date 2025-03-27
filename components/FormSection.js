@@ -155,17 +155,6 @@ const FormSection = () => {
               Submit
             </button>
           </form>
-
-          {/* Right Image */}
-          <div className={styles.imageWrapper}>
-            <Image
-              src="/services/careerform.webp"
-              alt="Career Application"
-              width={600}
-              height={600}
-              className={styles.image}
-            />
-          </div>
         </div>
       </div>
     </section>

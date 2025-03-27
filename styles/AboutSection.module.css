@@ -1,109 +1,144 @@
 /* AboutSection.module.css */
-
 .twoColumnLayout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
-    margin-top: 60px;
-    margin-bottom: 50px;
-  }
-  .heading{
-    font-size: 35px;
-    font-weight: 300px;
-    margin-left: 20px;
-  }
-  
-  .leftColumn {
-    position: relative;
-    padding-right: 2rem;
+  display: grid;
+  background-color: var(--section-background);
+  color: var(--text-color);
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  margin: 4rem auto;
+  max-width: 1200px;
+  padding: 2rem;
+  background: #ffffff;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #131313;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+
+.leftColumn {
+  position: relative;
+  padding-right: 2rem;
+}
+
+.rightColumn {
+  border-left: 2px solid #dee2e6;
+  padding-left: 4rem;
+}
+
+/* Card Styles */
+.point,
+.logo {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.point:hover,
+.logo:hover {
+  border-color: #495057;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.pointsContainer {
+  display: grid;
+  gap: 2rem;
+}
+
+.point {
+  opacity: 0;
+  transform: translateX(20px);
+  margin: 1rem 0;
+}
+
+.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.logoSection {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: flex-start;
+}
+
+.logo {
+  flex-shrink: 0;
+  margin: 1rem 0;
+}
+
+.logoContent {
+  flex: 1;
+}
+
+.helpLink {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #2b2b2c;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.helpLink:hover {
+  color: #495057;
+  border-bottom-color: currentColor;
+}
+
+.leadText {
+  font-size: 1.25rem;
+  color: #424242;
+  line-height: 1.6;
+  margin: 2rem 0;
+}
+
+.head {
+  font-size: 2rem;
+  color: #2b2b2c;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .twoColumnLayout {
+      grid-template-columns: 1fr;
+      padding: 1rem;
   }
   
   .rightColumn {
-    border-left: 2px solid #e2e8f0;
-    padding-left: 4rem;
+      border-left: none;
+      padding-left: 0;
+      border-top: 2px solid #dee2e6;
+      padding-top: 2rem;
   }
   
   .logoSection {
-    display: flex;
-    gap: 2rem;
-    margin-top: 2rem;
-    align-items: flex-start;
-  }
-  
-  .logo {
-    flex-shrink: 0;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-left: 20px;
-    margin-top: 100px;
-  }
-  
-  .logoContent {
-    flex: 1;
-  }
-  
-  .helpLink {
-    display: inline-block;
-    margin-top: 1.5rem;
-    color: #040404;
-    font-weight: 600;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    transition: all 0.3s ease;
-  }
-  
-  .helpLink:hover {
-    color: #4e4e4f;
-    border-bottom-color: currentColor;
-  }
-  
-  /* Rest of previous styles remain */
-  .pointsContainer {
-    display: grid;
-    gap: 2rem;
-  }
-  
-  .point {
-    padding: 2rem;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transform: translateX(20px);
-    transition: all 0.4s ease-out;
-  }
-  
-  .animate {
-    opacity: 1;
-    transform: translateX(0);
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .twoColumnLayout {
-      grid-template-columns: 1fr;
-    }
-    
-    .rightColumn {
-      border-left: none;
-      padding-left: 0;
-      border-top: 2px solid #e2e8f0;
-      padding-top: 2rem;
-    }
-    
-    .logoSection {
       flex-direction: column;
-    }
   }
-  .leadText{
-    font-size: 20px;
-    font-weight: 500px;
-    color: #4f5151;
-    margin-top: 100px;
+  
+  .heading {
+      font-size: 2rem;
+      padding-left: 0;
   }
-  .head{
-    font-size: 30px;
-    font-weight: 400px;
-    color:rgb(76, 75, 75);
+  
+  .leadText {
+      margin: 1.5rem 0;
   }
+}
+
+@media (max-width: 480px) {
+  .point,
+  .logo {
+      padding: 1.5rem;
+  }
+}

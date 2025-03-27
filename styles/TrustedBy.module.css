@@ -10,6 +10,8 @@
   align-items: center;
   justify-content: center;
   background: white;
+  background-color: var(--section-background);
+  color: var(--text-color);
   margin-top: 4rem;
 }
 

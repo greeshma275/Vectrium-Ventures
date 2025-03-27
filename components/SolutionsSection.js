@@ -22,16 +22,8 @@ export default function SolutionsSection() {
   }, []);
 
   return (
-    <section className={`${styles.solutionsSection}`}>
-      <div className={styles.contentWrapper}>
-        <div className={styles.imageContainer}>
-          <img 
-            src="solutions.png" 
-            alt="Our Solutions" 
-            className={styles.solutionsImage}
-          />
-        </div>
-        
+    <section className={styles.solutionsSection}>
+      <div className={styles.heroCard}>
         <div className={styles.textContent}>
           <h2 className={styles.sectionTitle}>Our Solutions</h2>
           <p className={styles.description}>

@@ -6,6 +6,8 @@
 
 .background {
   position: absolute;
+  background-color: var(--section-background);
+  color: var(--text-color);
   top: 0;
   left: 0;
   right: 0;

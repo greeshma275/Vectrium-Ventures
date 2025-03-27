@@ -63,11 +63,7 @@ const FeaturesSection = () => {
       </div>
 
       <div className={styles.imageColumn}>
-        <img 
-          src="/solutions-min.png" 
-          alt="Digital Solutions" 
-          className={styles.featureImage}
-        />
+       
       </div>
     </section>
   );

@@ -1,10 +1,10 @@
-import styles from '/styles/HeroSection.module.css'; 
+import styles from '/styles/HeroSection.module.css';
+
 const HeroSection = ({ activeSection }) => {
   return (
     <section className={styles.heroSection}>
       {activeSection === 'services' ? (
-        // Updated Services Content
-        <div className={styles.content}>
+        <div className={styles.heroCard}>
           <h1 className={styles.title}>Our Services</h1>
           <h2 className={styles.subtitle}>
             We provide best<br />
@@ -25,14 +25,19 @@ const HeroSection = ({ activeSection }) => {
           </a>
         </div>
       ) : activeSection === 'aboutus' ? (
-        // About Us Content
-        <div className={styles.aboutUsContent}>
-          <h2>We&apos;re changing the<br />whole game.</h2>
-          <a href="https://api.whatsapp.com/send?phone=918815631154"className={styles.callButton}>Call Now</a>
+        <div className={styles.heroCard}>
+          <h2 className={styles.title}>We&apos;re changing the<br />whole game.</h2>
+          <a 
+            href="https://api.whatsapp.com/send?phone=918815631154"
+            className={styles.ctaButton}
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            Call Now
+          </a>
         </div>
       ) : activeSection === 'career' ? (
-      
-        <div className={styles.content}>
+        <div className={styles.heroCard}>
           <h1 className={styles.title}>
             One Step<br />
             Closer To Your New Job
@@ -42,7 +47,6 @@ const HeroSection = ({ activeSection }) => {
             talented individuals to join our team and help us grow. If you&apos;re passionate about 
             technology, creativity, and innovation, we&apos;d love to hear from you.
           </p>
-          
           <div className={styles.careerCategories}>
             <h3 className={styles.subtitle}>Popular Categories</h3>
             <ul className={styles.categoryList}>
@@ -51,7 +55,6 @@ const HeroSection = ({ activeSection }) => {
               <li>Backend Dev</li>
             </ul>
           </div>
-          
           <a 
             href="#apply" 
             className={styles.ctaButton}
@@ -60,8 +63,8 @@ const HeroSection = ({ activeSection }) => {
           </a>
         </div>
       ) : (
-        // Original Home Content
-        <div className={styles.content}>
+        // Home Content
+        <div className={styles.heroCard}>
           <h1 className={styles.title}>
             Empowering Your <br />
             <span>Digital Journey</span>
@@ -74,13 +77,19 @@ const HeroSection = ({ activeSection }) => {
             Our expert team specializes in driving innovation across design, development, and marketing.
           </p>
           <div className={styles.cta}>
-            <a href="https://api.whatsapp.com/send?phone=918815631154" className={styles.ctaButton}>Call Now →</a>
+            <a 
+              href="https://api.whatsapp.com/send?phone=918815631154" 
+              className={styles.ctaButton}
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Call Now →
+            </a>
           </div>
         </div>
       )}
-      
     </section>
   );
 };
 
-export default HeroSection; 
+export default HeroSection;

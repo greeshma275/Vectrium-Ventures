@@ -1,9 +1,32 @@
-/* Services Section Styles */
+/* ServicesCarousel.module.css */
+/* Updated Card Styles */
+.serviceCard {
+  flex: 0 0 calc(100% - 2rem);
+  padding: 2.5rem;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  margin: 0 1rem;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.serviceCard:hover {
+  border-color: #495057;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Rest of existing styles remain the same */
 .servicesSection {
     padding: 4rem 2rem;
-    background: #f8f9fa;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    background: #ffffff;
+    overflow-x: hidden;
     width: 100%;
+    background-color: var(--section-background);
+    color: var(--text-color);
   }
   
   .sectionTitle {
@@ -13,7 +36,6 @@
     margin-bottom: 3rem;
   }
   
-  /* Carousel Container */
   .carouselWrapper {
     display: flex;
     align-items: center;
@@ -26,35 +48,15 @@
   .carouselContainer {
     flex: 1;
     overflow: hidden;
-    touch-action: pan-y; /* Prevent browser swipe navigation */
+    touch-action: pan-y;
   }
   
-  /* Carousel Track */
   .carouselTrack {
     display: flex;
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    margin: 0 -1rem; /* Counteract card margins */
+    margin: 0 -1rem;
   }
   
-  /* Service Card */
-  .serviceCard {
-    flex: 0 0 calc(100% - 2rem); /* Full width on mobile */
-    padding: 2rem;
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    margin: 0 1rem;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-sizing: border-box; /* Include padding in width */
-  }
-  
-  .serviceCard:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Card Content */
   .serviceLogo {
     width: 80px;
     height: 80px;
@@ -75,7 +77,6 @@
     font-size: 1rem;
   }
   
-  /* Navigation Arrows */
   .arrowButton {
     background: #2b2c2c;
     color: white;
@@ -101,20 +102,19 @@
     cursor: not-allowed;
   }
   
-  /* Responsive Design */
   @media (min-width: 768px) {
     .serviceCard {
-      flex: 0 0 calc(50% - 2rem); /* 2 cards per view */
+      flex: 0 0 calc(50% - 2rem);
     }
   }
   
   @media (min-width: 1024px) {
     .serviceCard {
-      flex: 0 0 calc(33.33% - 2rem); /* 3 cards per view */
+      flex: 0 0 calc(33.33% - 2rem);
     }
   
     .carouselTrack {
-      margin: 0 -0.5rem; /* Adjust spacing for desktop */
+      margin: 0 -0.5rem;
     }
   }
   
@@ -128,7 +128,7 @@
     }
     
     .serviceCard {
-      padding: 1.5rem;
+      padding: 2rem;
     }
     
     .serviceLogo {
@@ -147,7 +147,6 @@
     }
   }
   
-  /* Mobile Landscape Prevention */
   @media (max-width: 480px) and (orientation: landscape) {
     .servicesSection {
       padding: 2rem 1rem;

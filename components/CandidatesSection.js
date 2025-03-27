@@ -17,17 +17,6 @@ const CandidatesSection = () => {
     >
       <div className={styles.container}>
         <div className={styles.grid}>
-          {/* Left Image */}
-          <div className={styles.imageWrapper}>
-            <Image
-              src="/services/img.jpg"
-              alt="Candidate & Employer Benefits"
-              width={550}
-              height={550}
-              className={styles.image}
-              style={{ marginTop: '2rem' }}
-            />
-          </div>
 
           {/* Right Content */}
           <div className={styles.content}>

@@ -1,15 +1,27 @@
 :root {
-    --bg-color: #ffffff;
-    --text-color: #333333;
-  }
-  
-  [data-theme="dark"] {
-    --bg-color: #1a1a1a;
-    --text-color: #ffffff;
-  }
-  
-  html, body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #4f4f4f;
+  --section-background: #f8fafc;
+}
+
+[data-theme="dark"] {
+  --background-color: #000000;
+  --text-color: #ffffff;
+  --accent-color: #7c7c7c;
+  --section-background: #1a1a1a;
+}
+
+/* Apply to all sections */
+section {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Specific section overrides */
+.heroSection,
+.servicesSection,
+.aboutSection,
+.contactSection {
+  background-color: var(--section-background);
+}
