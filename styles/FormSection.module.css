@@ -3,6 +3,8 @@
   padding: 6rem 0;
   background: #f8fafc;
   display: flex;
+  background-color: var(--section-background);
+  color: var(--text-color);
   justify-content: center;
 }
 
