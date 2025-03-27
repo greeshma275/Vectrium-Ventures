@@ -1,7 +1,7 @@
 'use client';
 import { useInView } from 'react-intersection-observer';
 import styles from '../styles/AboutSection.module.css';
-
+import Image from "next/image";
 const AboutSection = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
